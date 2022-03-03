@@ -584,10 +584,10 @@ class Schema extends BaseObject implements SchemaContract
     }
 
     /**
-     * @param \GoldSpecDigital\ObjectOrientedOAS\Objects\Schema[] $properties
+     * @param Schema|SchemaComposition ...$properties
      * @return static
      */
-    public function properties(Schema ...$properties): self
+    public function properties(Schema|SchemaComposition ...$properties): self
     {
         $instance = clone $this;
 
